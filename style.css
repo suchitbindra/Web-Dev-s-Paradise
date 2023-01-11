@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+#text{
+text-align: center;
+color:tomato;
+animation-name: weird;
+animation-duration: 3s;
+animation-iteration-count:initial;
+animation-timing-function: ease-in-out;
+font-family: 'Nunito', sans-serif;
+font-weight: bolder;
+font-size: 35px;
+}
+@keyframes weird{
+  25%{font-size: 30px;}
+  75%{font-size: 40px;} 
+  100%{font-size: 45px; transform:rotate(30deg) ;} 
+}
+#body{
+height: 400px;
+width: 450px;
+position: absolute;
+left: 550px;
+top:200px ;
+right:30px ;
+bottom:800px ;
+border: 3px solid black;
+}
+input:invalid{
+
+    animation-name: Shake;
+    animation-duration: .3s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in;
+}
+@keyframes Shake{
+    25%{transform: translateX(4px);}
+    75%{transform: translatex(-4px);}
+    100%{ transform: translateX(4px);} 
+}
+input{
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    height: 55px;
+    width: 200px;
+    font-size: 35px;
+    color: yellowgreen;
+}
+@media only screen and (max-width:1080px){
+    #body{    
+        left: 119px;
+        top: 200px;
+        right: 30px;
+        bottom: 800px;
+        height: 600px;
+        width: 719px;}
+    #text{
+        font-size: 57px;
+    }
+    input{    font-weight: bolder;
+        height: 102px;
+        width: 398px;
+        font-size: 55px;
+        color: yellowgreen;
+    border: 3px solid limegreen;}      
+
+}
